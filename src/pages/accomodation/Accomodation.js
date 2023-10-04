@@ -19,7 +19,7 @@ export default function Accomodation() {
   // Utilisation du hook useParams pour extraire l'ID de l'URL.
   const { id } = useParams();
 
-// Recherche des détails de l'hébergement correspondant à l'ID
+// Recherche des détails de l'hébergement correspondant à l'ID.
   const dataCurrentAccomodation = datas.find(data => data.id === id);
 
   // Utilisation de useEffect pour gérer le comportement lorsque l'ID change
