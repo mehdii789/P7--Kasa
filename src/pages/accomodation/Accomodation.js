@@ -22,10 +22,10 @@ export default function Accomodation() {
 // Recherche des détails de l'hébergement correspondant à l'ID.
   const dataCurrentAccomodation = datas.find(data => data.id === id);
 
-  // Utilisation de useEffect pour gérer le comportement lorsque l'ID change
+  // Utilisation de useEffect pour gérer le comportement lorsque l'ID change.
   useEffect(() => {
     if (!dataCurrentAccomodation) {
-      // L'ID de l'hébergement n'existe pas dans les données, rediriger vers NotFound
+      // L'ID de l'hébergement n'existe pas dans les données, rediriger vers NotFound.
       window.location.href = '/notfound';
     } else {
       // Si l'ID est valide, mettre à jour l'état avec les images de l'hébergement
